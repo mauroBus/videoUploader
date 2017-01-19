@@ -1,0 +1,22 @@
+<section class="uploader-section">
+
+  <video-uploader
+      max-file-size="50000000"
+      on-upload="$ctrl.onUpload"
+      on-fail="$ctrl.onFail" >
+  </video-uploader>
+
+  <div
+      class="col-md-10"
+      data-ng-show="$ctrl.error">
+
+    <strong class="error text-danger" >
+      Error: {{$ctrl.error}}
+      <div>
+        <span class="label label-warning">Video not loaded</span>
+      </div>
+    </strong>
+
+  </div>
+
+</section>
