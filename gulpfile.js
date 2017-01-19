@@ -50,22 +50,10 @@ const config = {
         VENDOR_PATH + '/angular-resource/angular-resource.js',
 
         VENDOR_PATH + '/blueimp-file-upload/js/vendor/jquery.ui.widget.js',
-        VENDOR_PATH + '/blueimp-load-image/js/load-image.all.min.js',
-        // VENDOR_PATH + '/blueimp-canvas-to-blob/js/canvas-to-blob.min.js',
-        VENDOR_PATH + '/blueimp-file-upload/js/jquery.iframe-transport.js',
-
-        // VENDOR_PATH + '/blueimp-file-upload/js/*.js',
         VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload.js',
 
         VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-process.js',
-        VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-video.js',
-        // VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-angular.js',
-
-        // VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-ui.js',
-        // VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-audio.js',
-        // VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-validate.js',
-
-        // VENDOR_PATH + '/angular-mocks/angular-mocks.js'
+        VENDOR_PATH + '/blueimp-file-upload/js/jquery.fileupload-video.js'
       ]
     },
     app: {
