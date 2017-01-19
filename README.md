@@ -1,12 +1,11 @@
+# Video Uploader Demo
 
-# Install
+## Install
 ```
-npm install
-bower install
+npm install && bower install
 ```
 
-# Run locally
+## Run
 ```
 gulp serve
 ```
-
