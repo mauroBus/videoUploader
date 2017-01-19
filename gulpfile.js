@@ -208,5 +208,5 @@ gulp.task('serve', ['build'], serve({
 
 /***** Task: Default *****/
 gulp.task('default', [
-  'serve'
+  'build'
 ]);
