@@ -1,0 +1,38 @@
+<section id="video-uploader">
+
+  <div class="row fileupload-buttonbar">
+    <div class="col-lg-4 col-md-4">
+
+      <span class="btn btn-info fileinput-button" >
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Add Video...</span>
+        <input type="file" name="files[]" >
+      </span>
+
+      <button
+          type="button"
+          class="btn btn-success start"
+          ng-show="$ctrl.videoChosen"
+          data-ng-click="$ctrl.upload()" >
+        <i class="glyphicon glyphicon-upload"></i>
+        <span>Upload To Wistia!</span>
+      </button>
+    </div>
+
+    <div data-ng-show="$ctrl.loading"
+        class="col-lg-4 col-md-4">
+      <p class="size">{{$ctrl.video.size | formatFileSize}}</p>
+
+      <div class="progress progress-striped active fade in"
+          data-ng-class="{ 'in': $ctrl.loading  }" >
+        <div class="progress-bar progress-bar-success"
+            data-ng-style="{ width: $ctrl.progress + '%' }">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <ng-include src="'components/video-uploader/preview/preview.html'"></ng-include>
+
+</section>
