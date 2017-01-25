@@ -1,0 +1,19 @@
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.video-preview {
+  margin: 10px;
+}
+.video-preview video {
+  width: 100%;
+  height: 100%;
+}
