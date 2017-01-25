@@ -1,4 +1,4 @@
-# Video Uploader Demo
+# Video Uploader [Demo](https://maurobus.github.io/videoUploader)
 
 ## Install
 ```
@@ -9,3 +9,9 @@ npm install && bower install
 ```
 gulp serve
 ```
+
+## Deploy
+```
+gulp deploy
+```
+Visit https://maurobus.github.io/videoUploader

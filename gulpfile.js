@@ -14,6 +14,7 @@ const livereload = require('gulp-livereload');
 const runSequence = require('run-sequence');
 const sourcemaps = require('gulp-sourcemaps');
 const ngAnnotate = require('gulp-ng-annotate');
+const ghPages = require('gulp-gh-pages');
 
 const serve = require('gulp-serve');
 
@@ -204,6 +205,28 @@ gulp.task('serve', ['build'], serve({
   root: [config.dist],
   port: config.serverPort
 }));
+
+
+/***** Task: Deploy (gh-pages) *****/
+gulp.task('deploy', (cbk) => {
+  return runSequence('clean', [
+    'copy-static',
+    'lint',
+    'build-js',
+    'build-css'
+  ],
+  () => {
+    gulp.src('./dist/**/*')
+      .pipe(ghPages());
+
+    cbk();
+  });
+});
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 
 /***** Task: Default *****/
